@@ -8,10 +8,6 @@ app = Flask(__name__)
 def root():
     return render_template('table.html')
 
-@app.route('/hello.html')  # crea la ruta del servidor creado
-def hello():
-    return 'Hello, World!'
-
 
 @app.route('/get_data.json')  # crea la ruta del servidor creado
 def get_data():
