@@ -1,3 +1,4 @@
+
 from os import write
 import RPi.GPIO as GPIO
 import time
@@ -43,5 +44,17 @@ while(1):
         writer.writerow(mylist)
     datapos.close
 
+    for xx in range(10000000):
+        zz = 1     
+
+
+
+
 GPIO.cleanup()
+
+
+
+
+
+
 

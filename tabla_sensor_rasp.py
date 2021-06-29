@@ -18,8 +18,8 @@ def get_data():
         text_td = " "
         #print (data)
         for line in fin:
-            temp, pres, hum = line.rstrip('\n').split(",")
-            response['data'].append([temp, pres, hum])
+            temp, pres= line.rstrip('\n').split(",")
+            response['data'].append([temp, pres])
 
         jsonStr = json.dumps(response)
         return jsonStr
